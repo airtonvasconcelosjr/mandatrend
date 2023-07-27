@@ -1,0 +1,200 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-img {
+    width: 100%;
+    max-height: auto;
+    z-index: 1;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.center-image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+h2 {
+    margin: 0;
+}
+
+.img-container {
+    width: 40%;
+    display: block;
+}
+
+.first-img { 
+    margin-top: -4rem;
+    width: 100%;
+}
+
+.image-content {
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    justify-content: center;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-img{
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    justify-content: center
+}
+
+.title {
+    font-size: 40px;
+    margin-left: 2rem;
+}
+.title2 {
+    font-size: 30px;
+    margin-left: 2rem;
+}
+
+.desc {
+    font-size: 25px;
+    color: rgb(70, 70, 70);
+    margin-left: 2rem;
+}
+
+.font {
+    position: relative;
+    color: grey;
+    font-style: italic;
+    margin-left: 2rem;
+}
+
+.underline1,
+.underline2,
+.underline3 {
+    position: relative;
+    left: 0;
+    bottom: -5px;
+    width: 35%;
+    height: 8px;
+    z-index: -1;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    width: 50%;
+}
+
+.image-box{
+    width: 50%;
+}
+.underline2{
+    width: 50%;
+}
+
+/* Estilos para os underscores */
+.underline1 { background: linear-gradient(to right, #e62359, #6d5aa2); }
+.underline2 { background: linear-gradient(to right, #75c5ce, #6760a6); }
+.underline3 { background: linear-gradient(to right, #74c7cd, #3ab28c); }
+
+/* Media queries para ajustes em telas pequenas */
+/* ... (seu CSS existente) ... */
+
+/* Media query para ajustes em telas médias e grandes */
+@media screen and (min-width: 769px) {
+    .center-image1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-wrapper {
+        width: 45%; /* Defina o tamanho das imagens lado a lado */
+        margin: 10px;
+    }
+
+    .underline2,
+    .underline3 {
+        width: 50%; /* Defina a largura completa dos underlines nas imagens lado a lado */
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+
+    .img-container {
+        width: 80%;
+    }
+
+    .first-img {
+        margin-top: 0;
+    }
+
+    .center-image {
+        flex-direction: column;
+    }
+
+    .image-wrapper {
+        width: 100%;
+    }
+
+    .underline1,
+    .underline2,
+    .underline3 {
+        width: 60%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    h2 {
+        font-size: 20px; /* Tamanho de fonte reduzido em telas pequenas */
+    }
+
+    .font {
+        font-size: 14px; /* Tamanho de fonte reduzido em telas pequenas */
+    }
+
+    .desc {
+        font-size: 16px; /* Tamanho de fonte reduzido em telas pequenas */
+    }
+
+    .title {
+        font-size: 20px; /* Tamanho de fonte reduzido em telas pequenas */
+    }
+
+    .title2 {
+        font-size: 20px; /* Tamanho de fonte reduzido em telas pequenas */
+    }
+
+    .footer-text {
+        font-size: 12px; /* Tamanho de fonte reduzido em telas pequenas */
+    }
+}
